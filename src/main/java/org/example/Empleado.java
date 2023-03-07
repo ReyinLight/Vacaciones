@@ -45,7 +45,7 @@ public class Empleado {
 
         // Se recorrerán los años para evaluar los dias de vacaciones correspondientes
         for (i = 1; i <= 5 && i <= añosTotales; i++, diasVacas += 2)
-            if(i >= añosViejaLey) // Si los años actuales ya superaron a los de la nueva ley, entonces se agregan los dias de vacaciones nuevos
+            if(i > añosViejaLey) // Si los años actuales ya superaron a los de la nueva ley, entonces se agregan los dias de vacaciones nuevos
                 total += diasVacas;
 
         for (; i < añosTotales; i++)
